@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News layout</title>
+
+<style>
+    
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
+
+.block-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300%;
+    transition: transform 1s ease;
+    
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.books {
+    width: 33.33%;
+    background-color: #e6e6e6;
+    
+}
+
+.books td{
+    text-align: center;
+}
+
+.books img {
+    width: 120px;
+    margin: auto;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- https://www.kaggle.com/code/shrishtitayde/novel-dataset/input
+//book sources -->
+
+<div class="carousel">
+    <h1 style="text-align: center; margin: 30px 0;"> Recommended Reads</h1>
+    <div class="block-container">
+
+        <table class="books">
+
+        <tr>
+            <td>
+                <img src="./images/the-invisible-life-of-addie-larue.jpg" 
+                alt="the-invisible-life-of-addie-larue">
+                <h3>The Invisible Life of Addie Larue</h3>
+                <p> V.E. Schwab </p>
+            </td>
+        </tr>
+
+        </table>
+
+
+        <table class="books"> 
+        <tr>
+            <td>
+                <img src="images/the-midnight-library.jpg" 
+                alt="The Midnight Library">
+                <h3>The Midnight Library</h3>
+                <p> Matt Haig </p>
+            </td>
+        </tr>
+        </table>
+
+
+        <table class="books">  
+
+        <tr>
+            <td>
+                <img src="images/where-the-crawdads-sing.jpg" 
+                alt="where-the-crawdads-sing">
+                <h3>Where The Crawdads Sing</h3>
+                <p> Delia Owens </p>
+            </td>
+        </tr>
+
+        </table>
+
+
+
+        <table class="books">
+
+        <tr>
+            <td>
+                <img src="images/project-hail-mary.jpg" 
+                alt="project-hail-mary">
+                <h3>Project Hail Mary</h3>
+                <p> Andy Weir </p>
+            </td>
+        </tr>
+
+        </table>
+
+        <table class="books"> 
+        <tr>
+            <td>
+                <img src="images/the-giver-of-stars.jpg" 
+                alt="The Giver of Stars">
+                <h3>The Giver of Stars</h3>
+                <p> Jojo Moyes </p>
+            </td>
+        </tr>
+        </table>
+
+        <table class="books">  
+
+        <tr>
+            <td>
+                <img src="images/the-song-of-achilles-madel.jpg" 
+                alt="The Song of Achilles">
+                <h3>The Song of Achilles</h3>
+                <p> Madelaine Miller </p>
+            </td>
+        </tr>
+
+        </table>
+
+
+
+        <table class="books">
+
+        <tr>
+            <td>
+                <img src="images/the-testaments.jpg" 
+                alt="The Testaments">
+                <h3>The Testaments</h3>
+                <p mt-2> Margaret Atwood </p>
+            </td>
+        </tr>
+
+        </table>
+
+        <table class="books"> 
+        <tr>
+            <td>
+                <img src="images/the-vanishing-half-brit-ben.jpg" 
+                alt="The Vanishing Half">
+                <h3>The Vanishing Half</h3>
+                <p> Brit Bennett </p>
+            </td>
+        </tr>
+        </table>
+
+        <table class="books">  
+
+        <tr>
+            <td>
+                <img src="images/the-paris-library.jpg" 
+                alt="The Paris Library">
+                <h3>The Paris Library</h3>
+                <p> Janet Tfank </p>
+            </td>
+        </tr>
+
+        </table>
+    </div>
+
+</div>
+
+
+
+
+<script>
+  let slide = 0;
+  
+  const container = document.querySelector('.block-container');
+  const totalSlides = 3; // 9 books / 3
+
+  setInterval(() => {
+    slide = (slide + 1) % totalSlides;
+    container.style.transform = `translateX(-${slide * 100/totalSlides}%)`;
+  }, 4000);
+</script>
+
+
+
+</body>
+</html>

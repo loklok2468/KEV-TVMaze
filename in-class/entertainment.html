@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-
+scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Entertainment shows - Kevs TV</title>
+        <meta name="description" content="Latest sports news, game coverage, and athlete interviews. Stay updated with live scores and match analysis.">
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/2276178eda.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body id="Entertainment-page">
+        <nav class="bg-slate-800 border-b border-slate-700 shadow-lg">
+
+            <div class="container mx-auto px-4 flex items-center justify-between py-6">
+
+            <!-- Logo + Search -->
+            <div class="flex items-center gap-6">
+
+                <a class="text-3xl text-white brand-link noto-sans" href="index.html">
+                    KEVS TV
+                </a>
+
+                <a class="text-gray-200 hover:text-blue-600 flex items-center gap-2 mt-2" href="search.html">
+                    <i class="fa-solid fa-search text-blue-200"></i>
+                    Search
+                </a>
+
+            </div>
+
+            <!-- RIGHT GROUP - Nav -->
+            <ul class="hidden md:flex items-center gap-4">
+
+                <li>
+                    <a class="text-gray-200 hover:text-blue-600 flex items-center gap-3" href="index.html">
+                        <i class="fa-solid fa-house text-blue-200"></i>Home |
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-gray-200 hover:text-blue-600 flex items-center gap-3" href="fitness.html">
+                        <i class="fa-solid fa-football text-blue-200"></i>Fitness |
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-gray-200 hover:text-blue-600 flex items-center gap-3" href="educational.html">
+                        <i class="fa-solid fa-book text-blue-200"></i>Educa. |
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-gray-200 hover:text-blue-600 flex items-center gap-3" href="entertainment.html">
+                        <i class="fa-solid fa-gamepad text-blue-200"></i>Entertainment |
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+            
+        </nav>
+
+        <div class="container mx-auto px-4 py-4">
+            <div class="p-12 mb-4 jumbotron-entertainment">
+             <h1 class="text-5xl font-bold"
+             style="text-shadow: 0px 4px 6px rgba(0,0,0,0.8);">
+             Entertainment Shows</h1>
+             
+            </div>
+
+            <div id="results" class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-4"></div>
+
+        </div>
+
+        <script src="./js/tvmaze.js"></script>
+        <script>loadShows('game');</script>
+    
+        <!--
+        <div class="flex justify-center gap-2 mt-6">
+            <button onclick="loadNews('education', 1)">1</button>
+            <button onclick="loadNews('education', 2)">2</button>
+            <button onclick="loadNews('education', 3)">3</button>
+            <button onclick="loadNews('education', 4)">4</button>
+        </div>    
+        -->
+
+
+
+        <footer class="bg-slate-800 text-white text-center py-6 mt-16">
+
+        <p class="mt-3">
+            © 2026 KEVS TV.
+        </p>
+
+        <p class="text-sm text-gray-300">
+            This website is a student project for educational purposes.
+        </p>
+
+      </footer>  
+
+    </body>
+</html>

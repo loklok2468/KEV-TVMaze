@@ -1,0 +1,91 @@
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.fa-house, .fa-football, .fa-book, .fa-gamepad, .fa-bars {
+    color: gray;
+    width: 1rem;
+    display: inline-block;
+}
+
+.input {
+  width : 200px;
+  height: 20px;
+
+}
+
+.submit {
+  width : 210px;
+  height: 30px;
+
+}
+
+
+.yellow-outline {
+  -webkit-text-stroke: 1px #facc15;
+}
+
+
+.jumbotron {
+  background-image: url('../images/tvmazebg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  min-height: 350px;
+}
+
+.jumbotron-fitness{
+  background-image: url('../images/fitnessbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: lightgreen;
+  min-height: 250px;
+}
+
+.jumbotron-educational{
+  background-image: url('../images/educational.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: rgb(160, 160, 160);
+  min-height: 250px;
+}
+
+.jumbotron-entertainment{
+  background-image: url('../images/entertainment.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: yellow;
+  min-height: 250px;
+}
+
+/* Navbar tweaks for improved appearance */
+nav .brand-link {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #1d4ed8;
+  background-color: rgba(29,78,216,0.05);
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  nav ul { padding-top: 0.5rem; }
+}
+
