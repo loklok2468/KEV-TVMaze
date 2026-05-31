@@ -1,4 +1,4 @@
-This is a website using java script, css and html to search tv shows
-Used api from TVmaze.com
-index.html be home page of the web and educational, entertainment and fitness are the pages
+This is a website using java script, css and html to search tv shows <br>
+Used api from TVmaze.com<br>
+index.html be home page of the web and educational, entertainment and fitness are the pages<br>
 can be interact and direct user to them from home page and theirself
